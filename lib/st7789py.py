@@ -187,7 +187,7 @@ class ST7789():
         """
         Initialize display.
         """
-        if height != 240 or width not in [320, 240, 135]:
+        if height != 240 or width not in [320, 240, 135, 128]:
             raise ValueError(
                 "Unsupported display. 320x240, 240x240 and 135x240 are supported."
             )
