@@ -1,6 +1,6 @@
 {
     "urls": [
-      ["st7789.py", "github:mattytrentini/st7789py_mpy/st7789py.py"]
+      ["st7789.py", "github:mattytrentini/st7789py_mpy/lib/st7789py.py"]
     ],
     "version": "0.1"
 }
