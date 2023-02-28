@@ -134,6 +134,11 @@ WIDTH_135 = [(135, 240, 52, 40),
              (135, 240, 53, 40),
              (240, 135, 40, 52)]
 
+WIDTH_128 = [(128, 128, 2, 1),
+             (128, 128, 1, 2),
+             (128, 128, 2, 3),
+             (128, 128, 3, 2)]
+
 # MADCTL ROTATIONS[rotation % 4]
 ROTATIONS = [0x00, 0x60, 0xc0, 0xa0]
 
@@ -316,6 +321,8 @@ class ST7789():
             table = WIDTH_240
         elif self._display_width == 135:
             table = WIDTH_135
+        elif self._display_width == 128:
+            table = WIDTH_128
         else:
             raise ValueError(
                 "Unsupported display. 320x240, 240x240 and 135x240 are supported."
