@@ -187,9 +187,9 @@ class ST7789():
         """
         Initialize display.
         """
-        if height != 240 or width not in [320, 240, 135, 128]:
+        if height not in [240, 128] or width not in [320, 240, 135, 128]:
             raise ValueError(
-                "Unsupported display. 320x240, 240x240 and 135x240 are supported."
+                "Unsupported display. 320x240, 240x240, 135x240 and 128x128 are supported."
             )
 
         if dc is None:
@@ -325,7 +325,7 @@ class ST7789():
             table = WIDTH_128
         else:
             raise ValueError(
-                "Unsupported display. 320x240, 240x240 and 135x240 are supported."
+                "Unsupported display. 320x240, 240x240, 135x240 and 128x128 are supported."
             )
 
         self.width, self.height, self.xstart, self.ystart = table[rotation]
