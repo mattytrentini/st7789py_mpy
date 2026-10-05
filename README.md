@@ -49,8 +49,9 @@ at 20 MHz, BGR color order, MADCTL `0x68` (`MX | MV | BGR`), and inversion on.
 `co16_tft_config.config()` uses native constructor dimensions **240x320** and
 the existing **rotation 1** table entry: width 320, height 240, zero offsets,
 MADCTL `0x60 | BGR = 0x68`, and no pixel byte swapping. No custom geometry
-or rotation table is needed. These settings are checked against the published
-source; actual display operation must still be verified on the board.
+or rotation table is needed. A CO16 hardware smoke completed initialization,
+all four rotations, edge-pixel and color-bar transfers, with every shared-bus
+chip select high afterward. Visual color/orientation still needs a manual check.
 
 The upstream default initialization already contains the manufacturer's
 display-function, RGB565 pixel-format, porch, gate, VCOM, power, frame-rate,

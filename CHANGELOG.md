@@ -10,6 +10,9 @@
     from this fork without fonts, assets or dependencies.
   - Documented manufacturer initialization/geometry, a font-free color-bar
     example, and SPI-host, command-only chip-select and shared-LoRa-pin limits.
+  - Exercised the mip-installed configuration on CO16 hardware: all four
+    rotations, full-screen drawing, color bars and released chip selects.
+    Visual color/orientation confirmation remains a manual check.
 
 2023-11-29
 ----------
