@@ -1,0 +1,8 @@
+{
+  "urls": [
+    ["st7789py.py", "github:mattytrentini/st7789py_mpy/lib/st7789py.py"],
+    ["co16_tft_config.py", "github:mattytrentini/st7789py_mpy/tft_configs/kincony_co16/tft_config.py"]
+  ],
+  "version": "1.0.0",
+  "deps": []
+}

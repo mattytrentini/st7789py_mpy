@@ -1,3 +1,16 @@
+2026-10-05 — 1.0.0
+-----------------
+
+  - Synchronized this fork with russhughes upstream master (`7265925`).
+  - Added the KinCony CO16 GMT020-02-7P configuration using the existing
+    native 240x320 rotation table, rotation 1, BGR, and SPI2 mode 0 at 20 MHz.
+  - Deselect SD, MAX and LoRa chip selects before display construction and
+    explicitly release LCD chip select after construction.
+  - Added a minimal mip manifest installing the driver and `co16_tft_config`
+    from this fork without fonts, assets or dependencies.
+  - Documented manufacturer initialization/geometry, a font-free color-bar
+    example, and SPI-host, command-only chip-select and shared-LoRa-pin limits.
+
 2023-11-29
 ----------
 
